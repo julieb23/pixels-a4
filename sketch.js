@@ -36,6 +36,51 @@ function draw(){
                 pixels[index + 2] = 0;
                 pixels[index + 3] = a;    
                 }
+                if(key=="3"){
+                pixels[index] = r;
+                pixels[index + 1] = b;
+                pixels[index + 2] = g;
+                pixels[index + 3] = a;
+                }
+                if(key=="4"){
+                pixels[index] = r/2;
+                pixels[index + 1] = g/2;
+                pixels[index + 2] = b/2;
+                pixels[index + 3] = a;
+                }
+                if(key=="5"){
+                pixels[index] = r*2;
+                pixels[index + 1] = g*2;
+                pixels[index + 2] = b*2;
+                pixels[index + 3] = a;
+                }
+                if(key=="6"){
+                pixels[index] = 255 - r;
+                pixels[index + 1] = 255 - g;
+                pixels[index + 2] = 255 - b;
+                pixels[index + 3] = a;
+                }
+                if(key=="7"){
+                pixels[index] = row*2;
+                pixels[index + 1] = col;
+                pixels[index + 2] = 255 - b;
+                pixels[index + 3] = a;
+                }
+                if(key=="8"){
+                if(index % 20 == 0){
+                pixels[index] = 255;
+                pixels[index + 1] = 0;
+                pixels[index + 2] = 0;
+                pixels[index + 3] = a;
+                }
+                if(key=="9"){
+                var lastPixel = pixels.length - 1;
+                pixels[lastPixel - index - 3] = r;
+                pixels[lastPixel - index - 2] = g;
+                pixels[lastPixel - index - 1] = b;
+                pixels[lastPixel - index - 0] = a;
+                }
+                }
             }
         }
     }
