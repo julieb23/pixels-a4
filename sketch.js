@@ -1,4 +1,5 @@
 var igUpload;
+var lastPixel;
 
 function preload(){
     igUpload = loadImage("rih.jpg")
